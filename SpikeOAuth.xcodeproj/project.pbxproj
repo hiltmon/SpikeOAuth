@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C119BD6152B709500DD97FB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C119BD5152B709500DD97FB /* Cocoa.framework */; };
+		3C119BE0152B709500DD97FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C119BDE152B709500DD97FB /* InfoPlist.strings */; };
+		3C119BE2152B709500DD97FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C119BE1152B709500DD97FB /* main.m */; };
+		3C119BE6152B709500DD97FB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3C119BE4152B709500DD97FB /* Credits.rtf */; };
+		3C119BE9152B709500DD97FB /* NVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C119BE8152B709500DD97FB /* NVAppDelegate.m */; };
+		3C119BEC152B709500DD97FB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C119BEA152B709500DD97FB /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C119BD1152B709500DD97FB /* SpikeOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpikeOAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C119BD5152B709500DD97FB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3C119BD8152B709500DD97FB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3C119BD9152B709500DD97FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3C119BDA152B709500DD97FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C119BDD152B709500DD97FB /* SpikeOAuth-Info.plist */ = {isa = PBXFileReference; path = "SpikeOAuth-Info.plist"; sourceTree = "<group>"; };
+		3C119BDF152B709500DD97FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C119BE1152B709500DD97FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C119BE3152B709500DD97FB /* SpikeOAuth-Prefix.pch */ = {isa = PBXFileReference; path = "SpikeOAuth-Prefix.pch"; sourceTree = "<group>"; };
+		3C119BE5152B709500DD97FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3C119BE7152B709500DD97FB /* NVAppDelegate.h */ = {isa = PBXFileReference; path = NVAppDelegate.h; sourceTree = "<group>"; };
+		3C119BE8152B709500DD97FB /* NVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVAppDelegate.m; sourceTree = "<group>"; };
+		3C119BEB152B709500DD97FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C119BCE152B709500DD97FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C119BD6152B709500DD97FB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C119BC6152B709500DD97FB = {
+			isa = PBXGroup;
+			children = (
+				3C119BDB152B709500DD97FB /* SpikeOAuth */,
+				3C119BD4152B709500DD97FB /* Frameworks */,
+				3C119BD2152B709500DD97FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C119BD2152B709500DD97FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C119BD1152B709500DD97FB /* SpikeOAuth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C119BD4152B709500DD97FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C119BD5152B709500DD97FB /* Cocoa.framework */,
+				3C119BD7152B709500DD97FB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C119BD7152B709500DD97FB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C119BD8152B709500DD97FB /* AppKit.framework */,
+				3C119BD9152B709500DD97FB /* CoreData.framework */,
+				3C119BDA152B709500DD97FB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3C119BDB152B709500DD97FB /* SpikeOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3C119BE7152B709500DD97FB /* NVAppDelegate.h */,
+				3C119BE8152B709500DD97FB /* NVAppDelegate.m */,
+				3C119BEA152B709500DD97FB /* MainMenu.xib */,
+				3C119BDC152B709500DD97FB /* Supporting Files */,
+			);
+			path = SpikeOAuth;
+			sourceTree = "<group>";
+		};
+		3C119BDC152B709500DD97FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C119BDD152B709500DD97FB /* SpikeOAuth-Info.plist */,
+				3C119BDE152B709500DD97FB /* InfoPlist.strings */,
+				3C119BE1152B709500DD97FB /* main.m */,
+				3C119BE3152B709500DD97FB /* SpikeOAuth-Prefix.pch */,
+				3C119BE4152B709500DD97FB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C119BD0152B709500DD97FB /* SpikeOAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C119BEF152B709500DD97FB /* Build configuration list for PBXNativeTarget "SpikeOAuth" */;
+			buildPhases = (
+				3C119BCD152B709500DD97FB /* Sources */,
+				3C119BCE152B709500DD97FB /* Frameworks */,
+				3C119BCF152B709500DD97FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpikeOAuth;
+			productName = SpikeOAuth;
+			productReference = 3C119BD1152B709500DD97FB /* SpikeOAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C119BC8152B709500DD97FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NV;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3C119BCB152B709500DD97FB /* Build configuration list for PBXProject "SpikeOAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C119BC6152B709500DD97FB;
+			productRefGroup = 3C119BD2152B709500DD97FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C119BD0152B709500DD97FB /* SpikeOAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C119BCF152B709500DD97FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C119BE0152B709500DD97FB /* InfoPlist.strings in Resources */,
+				3C119BE6152B709500DD97FB /* Credits.rtf in Resources */,
+				3C119BEC152B709500DD97FB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C119BCD152B709500DD97FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C119BE2152B709500DD97FB /* main.m in Sources */,
+				3C119BE9152B709500DD97FB /* NVAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C119BDE152B709500DD97FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C119BDF152B709500DD97FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3C119BE4152B709500DD97FB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C119BE5152B709500DD97FB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3C119BEA152B709500DD97FB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C119BEB152B709500DD97FB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C119BED152B709500DD97FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3C119BEE152B709500DD97FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3C119BF0152B709500DD97FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpikeOAuth/SpikeOAuth-Prefix.pch";
+				INFOPLIST_FILE = "SpikeOAuth/SpikeOAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C119BF1152B709500DD97FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpikeOAuth/SpikeOAuth-Prefix.pch";
+				INFOPLIST_FILE = "SpikeOAuth/SpikeOAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C119BCB152B709500DD97FB /* Build configuration list for PBXProject "SpikeOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C119BED152B709500DD97FB /* Debug */,
+				3C119BEE152B709500DD97FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C119BEF152B709500DD97FB /* Build configuration list for PBXNativeTarget "SpikeOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C119BF0152B709500DD97FB /* Debug */,
+				3C119BF1152B709500DD97FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C119BC8152B709500DD97FB /* Project object */;
+}
