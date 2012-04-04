@@ -7,28 +7,116 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C00E473152B7206005F41CE /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E442152B7205005F41CE /* GTMGatherInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E474152B7206005F41CE /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E444152B7205005F41CE /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E475152B7206005F41CE /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E446152B7205005F41CE /* GTMHTTPFetcherLogging.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E476152B7206005F41CE /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E448152B7205005F41CE /* GTMHTTPFetcherService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E477152B7206005F41CE /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E44A152B7205005F41CE /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E478152B7206005F41CE /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E44C152B7205005F41CE /* GTMHTTPUploadFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E479152B7206005F41CE /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E44E152B7205005F41CE /* GTMMIMEDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E47A152B7206005F41CE /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E450152B7205005F41CE /* GTMReadMonitorInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E47B152B7206005F41CE /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E453152B7205005F41CE /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E47C152B7206005F41CE /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E455152B7205005F41CE /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E47D152B7206005F41CE /* GTMOAuth2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C00E456152B7205005F41CE /* GTMOAuth2Window.xib */; };
+		3C00E47E152B7206005F41CE /* GTMOAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E458152B7205005F41CE /* GTMOAuth2WindowController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C00E47F152B7206005F41CE /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E45B152B7205005F41CE /* NSObject+SBJson.m */; };
+		3C00E480152B7206005F41CE /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E45E152B7205005F41CE /* SBJsonParser.m */; };
+		3C00E481152B7206005F41CE /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E460152B7205005F41CE /* SBJsonStreamParser.m */; };
+		3C00E482152B7206005F41CE /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E462152B7205005F41CE /* SBJsonStreamParserAccumulator.m */; };
+		3C00E483152B7206005F41CE /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E464152B7205005F41CE /* SBJsonStreamParserAdapter.m */; };
+		3C00E484152B7206005F41CE /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E466152B7205005F41CE /* SBJsonStreamParserState.m */; };
+		3C00E485152B7206005F41CE /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E468152B7205005F41CE /* SBJsonStreamWriter.m */; };
+		3C00E486152B7206005F41CE /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E46A152B7205005F41CE /* SBJsonStreamWriterAccumulator.m */; };
+		3C00E487152B7206005F41CE /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E46C152B7205005F41CE /* SBJsonStreamWriterState.m */; };
+		3C00E488152B7206005F41CE /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E46E152B7205005F41CE /* SBJsonTokeniser.m */; };
+		3C00E489152B7206005F41CE /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E470152B7205005F41CE /* SBJsonUTF8Stream.m */; };
+		3C00E48A152B7206005F41CE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E472152B7205005F41CE /* SBJsonWriter.m */; };
+		3C00E48E152B72DE005F41CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C00E48D152B72DE005F41CE /* Security.framework */; };
+		3C00E490152B72EA005F41CE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C00E48F152B72EA005F41CE /* SystemConfiguration.framework */; };
+		3C00E494152B73CA005F41CE /* NVStackExchangeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C00E492152B73CA005F41CE /* NVStackExchangeController.m */; };
+		3C00E495152B73CA005F41CE /* NVStackExchangeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C00E493152B73CA005F41CE /* NVStackExchangeController.xib */; };
+		3C00E49B152BBCB3005F41CE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C00E49A152BBCB3005F41CE /* WebKit.framework */; };
 		3C119BD6152B709500DD97FB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C119BD5152B709500DD97FB /* Cocoa.framework */; };
 		3C119BE0152B709500DD97FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C119BDE152B709500DD97FB /* InfoPlist.strings */; };
 		3C119BE2152B709500DD97FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C119BE1152B709500DD97FB /* main.m */; };
 		3C119BE6152B709500DD97FB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3C119BE4152B709500DD97FB /* Credits.rtf */; };
-		3C119BE9152B709500DD97FB /* NVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C119BE8152B709500DD97FB /* NVAppDelegate.m */; };
+		3C119BE9152B709500DD97FB /* SpikeOAuthAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C119BE8152B709500DD97FB /* SpikeOAuthAppDelegate.m */; };
 		3C119BEC152B709500DD97FB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C119BEA152B709500DD97FB /* MainMenu.xib */; };
+		3C566C5D152CA35300394522 /* NVDisqusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C566C5B152CA35300394522 /* NVDisqusController.m */; };
+		3C566C5E152CA35300394522 /* NVDisqusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C566C5C152CA35300394522 /* NVDisqusController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C00E441152B7205005F41CE /* GTMGatherInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGatherInputStream.h; sourceTree = "<group>"; };
+		3C00E442152B7205005F41CE /* GTMGatherInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMGatherInputStream.m; sourceTree = "<group>"; };
+		3C00E443152B7205005F41CE /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		3C00E444152B7205005F41CE /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		3C00E445152B7205005F41CE /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherLogging.h; sourceTree = "<group>"; };
+		3C00E446152B7205005F41CE /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherLogging.m; sourceTree = "<group>"; };
+		3C00E447152B7205005F41CE /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherService.h; sourceTree = "<group>"; };
+		3C00E448152B7205005F41CE /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherService.m; sourceTree = "<group>"; };
+		3C00E449152B7205005F41CE /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		3C00E44A152B7205005F41CE /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		3C00E44B152B7205005F41CE /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPUploadFetcher.h; sourceTree = "<group>"; };
+		3C00E44C152B7205005F41CE /* GTMHTTPUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPUploadFetcher.m; sourceTree = "<group>"; };
+		3C00E44D152B7205005F41CE /* GTMMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMMIMEDocument.h; sourceTree = "<group>"; };
+		3C00E44E152B7205005F41CE /* GTMMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMMIMEDocument.m; sourceTree = "<group>"; };
+		3C00E44F152B7205005F41CE /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		3C00E450152B7205005F41CE /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
+		3C00E452152B7205005F41CE /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		3C00E453152B7205005F41CE /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2Authentication.m; sourceTree = "<group>"; };
+		3C00E454152B7205005F41CE /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		3C00E455152B7205005F41CE /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2SignIn.m; sourceTree = "<group>"; };
+		3C00E456152B7205005F41CE /* GTMOAuth2Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2Window.xib; sourceTree = "<group>"; };
+		3C00E457152B7205005F41CE /* GTMOAuth2WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2WindowController.h; sourceTree = "<group>"; };
+		3C00E458152B7205005F41CE /* GTMOAuth2WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2WindowController.m; sourceTree = "<group>"; };
+		3C00E45A152B7205005F41CE /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		3C00E45B152B7205005F41CE /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		3C00E45C152B7205005F41CE /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		3C00E45D152B7205005F41CE /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3C00E45E152B7205005F41CE /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		3C00E45F152B7205005F41CE /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		3C00E460152B7205005F41CE /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		3C00E461152B7205005F41CE /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		3C00E462152B7205005F41CE /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		3C00E463152B7205005F41CE /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		3C00E464152B7205005F41CE /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		3C00E465152B7205005F41CE /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		3C00E466152B7205005F41CE /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		3C00E467152B7205005F41CE /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		3C00E468152B7205005F41CE /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		3C00E469152B7205005F41CE /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		3C00E46A152B7205005F41CE /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		3C00E46B152B7205005F41CE /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		3C00E46C152B7205005F41CE /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		3C00E46D152B7205005F41CE /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		3C00E46E152B7205005F41CE /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		3C00E46F152B7205005F41CE /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		3C00E470152B7205005F41CE /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		3C00E471152B7205005F41CE /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3C00E472152B7205005F41CE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		3C00E48D152B72DE005F41CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3C00E48F152B72EA005F41CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3C00E491152B73CA005F41CE /* NVStackExchangeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVStackExchangeController.h; sourceTree = "<group>"; };
+		3C00E492152B73CA005F41CE /* NVStackExchangeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVStackExchangeController.m; sourceTree = "<group>"; };
+		3C00E493152B73CA005F41CE /* NVStackExchangeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NVStackExchangeController.xib; sourceTree = "<group>"; };
+		3C00E49A152BBCB3005F41CE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3C119BD1152B709500DD97FB /* SpikeOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpikeOAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C119BD5152B709500DD97FB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3C119BD8152B709500DD97FB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3C119BD9152B709500DD97FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3C119BDA152B709500DD97FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3C119BDD152B709500DD97FB /* SpikeOAuth-Info.plist */ = {isa = PBXFileReference; path = "SpikeOAuth-Info.plist"; sourceTree = "<group>"; };
+		3C119BDD152B709500DD97FB /* SpikeOAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpikeOAuth-Info.plist"; sourceTree = "<group>"; };
 		3C119BDF152B709500DD97FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C119BE1152B709500DD97FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3C119BE3152B709500DD97FB /* SpikeOAuth-Prefix.pch */ = {isa = PBXFileReference; path = "SpikeOAuth-Prefix.pch"; sourceTree = "<group>"; };
+		3C119BE3152B709500DD97FB /* SpikeOAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpikeOAuth-Prefix.pch"; sourceTree = "<group>"; };
 		3C119BE5152B709500DD97FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		3C119BE7152B709500DD97FB /* NVAppDelegate.h */ = {isa = PBXFileReference; path = NVAppDelegate.h; sourceTree = "<group>"; };
-		3C119BE8152B709500DD97FB /* NVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVAppDelegate.m; sourceTree = "<group>"; };
+		3C119BE7152B709500DD97FB /* SpikeOAuthAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpikeOAuthAppDelegate.h; sourceTree = "<group>"; };
+		3C119BE8152B709500DD97FB /* SpikeOAuthAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpikeOAuthAppDelegate.m; sourceTree = "<group>"; };
 		3C119BEB152B709500DD97FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3C566C5A152CA35300394522 /* NVDisqusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDisqusController.h; sourceTree = "<group>"; };
+		3C566C5B152CA35300394522 /* NVDisqusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVDisqusController.m; sourceTree = "<group>"; };
+		3C566C5C152CA35300394522 /* NVDisqusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NVDisqusController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +124,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C00E49B152BBCB3005F41CE /* WebKit.framework in Frameworks */,
+				3C00E490152B72EA005F41CE /* SystemConfiguration.framework in Frameworks */,
+				3C00E48E152B72DE005F41CE /* Security.framework in Frameworks */,
 				3C119BD6152B709500DD97FB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,10 +134,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C00E440152B7205005F41CE /* GTMHTTPFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				3C00E441152B7205005F41CE /* GTMGatherInputStream.h */,
+				3C00E442152B7205005F41CE /* GTMGatherInputStream.m */,
+				3C00E443152B7205005F41CE /* GTMHTTPFetcher.h */,
+				3C00E444152B7205005F41CE /* GTMHTTPFetcher.m */,
+				3C00E445152B7205005F41CE /* GTMHTTPFetcherLogging.h */,
+				3C00E446152B7205005F41CE /* GTMHTTPFetcherLogging.m */,
+				3C00E447152B7205005F41CE /* GTMHTTPFetcherService.h */,
+				3C00E448152B7205005F41CE /* GTMHTTPFetcherService.m */,
+				3C00E449152B7205005F41CE /* GTMHTTPFetchHistory.h */,
+				3C00E44A152B7205005F41CE /* GTMHTTPFetchHistory.m */,
+				3C00E44B152B7205005F41CE /* GTMHTTPUploadFetcher.h */,
+				3C00E44C152B7205005F41CE /* GTMHTTPUploadFetcher.m */,
+				3C00E44D152B7205005F41CE /* GTMMIMEDocument.h */,
+				3C00E44E152B7205005F41CE /* GTMMIMEDocument.m */,
+				3C00E44F152B7205005F41CE /* GTMReadMonitorInputStream.h */,
+				3C00E450152B7205005F41CE /* GTMReadMonitorInputStream.m */,
+			);
+			path = GTMHTTPFetcher;
+			sourceTree = "<group>";
+		};
+		3C00E451152B7205005F41CE /* GTMOAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				3C00E452152B7205005F41CE /* GTMOAuth2Authentication.h */,
+				3C00E453152B7205005F41CE /* GTMOAuth2Authentication.m */,
+				3C00E454152B7205005F41CE /* GTMOAuth2SignIn.h */,
+				3C00E455152B7205005F41CE /* GTMOAuth2SignIn.m */,
+				3C00E456152B7205005F41CE /* GTMOAuth2Window.xib */,
+				3C00E457152B7205005F41CE /* GTMOAuth2WindowController.h */,
+				3C00E458152B7205005F41CE /* GTMOAuth2WindowController.m */,
+			);
+			path = GTMOAuth2;
+			sourceTree = "<group>";
+		};
+		3C00E459152B7205005F41CE /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				3C00E45A152B7205005F41CE /* NSObject+SBJson.h */,
+				3C00E45B152B7205005F41CE /* NSObject+SBJson.m */,
+				3C00E45C152B7205005F41CE /* SBJson.h */,
+				3C00E45D152B7205005F41CE /* SBJsonParser.h */,
+				3C00E45E152B7205005F41CE /* SBJsonParser.m */,
+				3C00E45F152B7205005F41CE /* SBJsonStreamParser.h */,
+				3C00E460152B7205005F41CE /* SBJsonStreamParser.m */,
+				3C00E461152B7205005F41CE /* SBJsonStreamParserAccumulator.h */,
+				3C00E462152B7205005F41CE /* SBJsonStreamParserAccumulator.m */,
+				3C00E463152B7205005F41CE /* SBJsonStreamParserAdapter.h */,
+				3C00E464152B7205005F41CE /* SBJsonStreamParserAdapter.m */,
+				3C00E465152B7205005F41CE /* SBJsonStreamParserState.h */,
+				3C00E466152B7205005F41CE /* SBJsonStreamParserState.m */,
+				3C00E467152B7205005F41CE /* SBJsonStreamWriter.h */,
+				3C00E468152B7205005F41CE /* SBJsonStreamWriter.m */,
+				3C00E469152B7205005F41CE /* SBJsonStreamWriterAccumulator.h */,
+				3C00E46A152B7205005F41CE /* SBJsonStreamWriterAccumulator.m */,
+				3C00E46B152B7205005F41CE /* SBJsonStreamWriterState.h */,
+				3C00E46C152B7205005F41CE /* SBJsonStreamWriterState.m */,
+				3C00E46D152B7205005F41CE /* SBJsonTokeniser.h */,
+				3C00E46E152B7205005F41CE /* SBJsonTokeniser.m */,
+				3C00E46F152B7205005F41CE /* SBJsonUTF8Stream.h */,
+				3C00E470152B7205005F41CE /* SBJsonUTF8Stream.m */,
+				3C00E471152B7205005F41CE /* SBJsonWriter.h */,
+				3C00E472152B7205005F41CE /* SBJsonWriter.m */,
+			);
+			path = SBJSON;
+			sourceTree = "<group>";
+		};
 		3C119BC6152B709500DD97FB = {
 			isa = PBXGroup;
 			children = (
 				3C119BDB152B709500DD97FB /* SpikeOAuth */,
+				3C00E440152B7205005F41CE /* GTMHTTPFetcher */,
+				3C00E451152B7205005F41CE /* GTMOAuth2 */,
+				3C00E459152B7205005F41CE /* SBJSON */,
 				3C119BD4152B709500DD97FB /* Frameworks */,
 				3C119BD2152B709500DD97FB /* Products */,
 			);
@@ -64,6 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				3C119BD5152B709500DD97FB /* Cocoa.framework */,
+				3C00E48D152B72DE005F41CE /* Security.framework */,
+				3C00E48F152B72EA005F41CE /* SystemConfiguration.framework */,
+				3C00E49A152BBCB3005F41CE /* WebKit.framework */,
 				3C119BD7152B709500DD97FB /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -82,10 +248,16 @@
 		3C119BDB152B709500DD97FB /* SpikeOAuth */ = {
 			isa = PBXGroup;
 			children = (
-				3C119BE7152B709500DD97FB /* NVAppDelegate.h */,
-				3C119BE8152B709500DD97FB /* NVAppDelegate.m */,
+				3C119BE7152B709500DD97FB /* SpikeOAuthAppDelegate.h */,
+				3C119BE8152B709500DD97FB /* SpikeOAuthAppDelegate.m */,
 				3C119BEA152B709500DD97FB /* MainMenu.xib */,
 				3C119BDC152B709500DD97FB /* Supporting Files */,
+				3C00E491152B73CA005F41CE /* NVStackExchangeController.h */,
+				3C00E492152B73CA005F41CE /* NVStackExchangeController.m */,
+				3C00E493152B73CA005F41CE /* NVStackExchangeController.xib */,
+				3C566C5A152CA35300394522 /* NVDisqusController.h */,
+				3C566C5B152CA35300394522 /* NVDisqusController.m */,
+				3C566C5C152CA35300394522 /* NVDisqusController.xib */,
 			);
 			path = SpikeOAuth;
 			sourceTree = "<group>";
@@ -130,6 +302,7 @@
 			attributes = {
 				CLASSPREFIX = NV;
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Noverse LLC";
 			};
 			buildConfigurationList = 3C119BCB152B709500DD97FB /* Build configuration list for PBXProject "SpikeOAuth" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -156,6 +329,9 @@
 				3C119BE0152B709500DD97FB /* InfoPlist.strings in Resources */,
 				3C119BE6152B709500DD97FB /* Credits.rtf in Resources */,
 				3C119BEC152B709500DD97FB /* MainMenu.xib in Resources */,
+				3C00E47D152B7206005F41CE /* GTMOAuth2Window.xib in Resources */,
+				3C00E495152B73CA005F41CE /* NVStackExchangeController.xib in Resources */,
+				3C566C5E152CA35300394522 /* NVDisqusController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +343,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C119BE2152B709500DD97FB /* main.m in Sources */,
-				3C119BE9152B709500DD97FB /* NVAppDelegate.m in Sources */,
+				3C119BE9152B709500DD97FB /* SpikeOAuthAppDelegate.m in Sources */,
+				3C00E473152B7206005F41CE /* GTMGatherInputStream.m in Sources */,
+				3C00E474152B7206005F41CE /* GTMHTTPFetcher.m in Sources */,
+				3C00E475152B7206005F41CE /* GTMHTTPFetcherLogging.m in Sources */,
+				3C00E476152B7206005F41CE /* GTMHTTPFetcherService.m in Sources */,
+				3C00E477152B7206005F41CE /* GTMHTTPFetchHistory.m in Sources */,
+				3C00E478152B7206005F41CE /* GTMHTTPUploadFetcher.m in Sources */,
+				3C00E479152B7206005F41CE /* GTMMIMEDocument.m in Sources */,
+				3C00E47A152B7206005F41CE /* GTMReadMonitorInputStream.m in Sources */,
+				3C00E47B152B7206005F41CE /* GTMOAuth2Authentication.m in Sources */,
+				3C00E47C152B7206005F41CE /* GTMOAuth2SignIn.m in Sources */,
+				3C00E47E152B7206005F41CE /* GTMOAuth2WindowController.m in Sources */,
+				3C00E47F152B7206005F41CE /* NSObject+SBJson.m in Sources */,
+				3C00E480152B7206005F41CE /* SBJsonParser.m in Sources */,
+				3C00E481152B7206005F41CE /* SBJsonStreamParser.m in Sources */,
+				3C00E482152B7206005F41CE /* SBJsonStreamParserAccumulator.m in Sources */,
+				3C00E483152B7206005F41CE /* SBJsonStreamParserAdapter.m in Sources */,
+				3C00E484152B7206005F41CE /* SBJsonStreamParserState.m in Sources */,
+				3C00E485152B7206005F41CE /* SBJsonStreamWriter.m in Sources */,
+				3C00E486152B7206005F41CE /* SBJsonStreamWriterAccumulator.m in Sources */,
+				3C00E487152B7206005F41CE /* SBJsonStreamWriterState.m in Sources */,
+				3C00E488152B7206005F41CE /* SBJsonTokeniser.m in Sources */,
+				3C00E489152B7206005F41CE /* SBJsonUTF8Stream.m in Sources */,
+				3C00E48A152B7206005F41CE /* SBJsonWriter.m in Sources */,
+				3C00E494152B73CA005F41CE /* NVStackExchangeController.m in Sources */,
+				3C566C5D152CA35300394522 /* NVDisqusController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +490,7 @@
 				3C119BF1152B709500DD97FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
