@@ -275,7 +275,8 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
   // NSLog(@"keys set ----------------------------\n%@", dict);
 }
 
-- (void)setKeysForResponseString:(NSString *)str {
+- (void)setKeysForResponseString:(NSString *)str 
+{
   NSDictionary *dict = [[self class] dictionaryWithResponseString:str];
   [self setKeysForResponseDictionary:dict];
 }
@@ -983,6 +984,20 @@ finishedRefreshWithFetcher:(GTMHTTPFetcher *)fetcher
     if (deltaSeconds > 0) {
       date = [NSDate dateWithTimeIntervalSinceNow:deltaSeconds];
     }
+// -----------------------------------------------------------------------------------------
+// HIL HACK, see if the expires key exists? And assuming its a string (so far)
+  } else {
+      
+      NSString *expiresStr = [self.parameters objectForKey:@"expires"];
+      if (expiresStr) {
+          NSNumberFormatter * numberFormatter = [[[NSNumberFormatter alloc] init] autorelease];
+          NSNumber *number = [numberFormatter numberFromString:expiresStr];
+          unsigned long deltaSeconds = [number unsignedLongValue];
+          if (deltaSeconds > 0) {
+              date = [NSDate dateWithTimeIntervalSinceNow:deltaSeconds];
+          }
+      }
+// ----------------------------------------------------------------------------------------
   }
   self.expirationDate = date;
 }
