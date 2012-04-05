@@ -52,6 +52,94 @@ static NSString *const kStackExchangeKeychainItemName = @"SpikeOAuth: StackExcha
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
+// utility for making a request from an old URL with some additional parameters
+// Copied from GTMOAuth2SignIn
++ (NSMutableURLRequest *)mutableURLRequestWithURL:(NSURL *)oldURL
+                                      paramString:(NSString *)paramStr {
+    NSString *query = [oldURL query];
+    if ([query length] > 0) {
+        query = [query stringByAppendingFormat:@"&%@", paramStr];
+    } else {
+        query = paramStr;
+    }
+    
+    NSString *portStr = @"";
+    NSString *oldPort = [[oldURL port] stringValue];
+    if ([oldPort length] > 0) {
+        portStr = [@":" stringByAppendingString:oldPort];
+    }
+    
+    NSString *qMark = [query length] > 0 ? @"?" : @"";
+    NSString *newURLStr = [NSString stringWithFormat:@"%@://%@%@%@%@%@",
+                           [oldURL scheme], [oldURL host], portStr,
+                           [oldURL path], qMark, query];
+    NSURL *newURL = [NSURL URLWithString:newURLStr];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:newURL];
+    return request;
+}
+
+- (IBAction)fetchButtonClicked:(id)sender
+{
+    [apiResultTextView setString:@"Doing an authenticated API fetch..."];
+    [apiResultTextView display];
+    
+    NSURL *url = [NSURL URLWithString:@"https://api.stackexchange.com/2.0/me"];
+        
+    NSMutableDictionary *paramsDict = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                       @"stackoverflow", @"site",
+                                       @"desc", @"order",
+                                       @"reputation", @"sort",
+                                       cachedAuth.accessToken, @"access_token",
+                                       @"9FRykWqwbDpJ1ou38LnwKA((", @"key", //This is a SO key for the APP!
+                                       // cachedAuth.clientID, @"api_key",
+                                       // cachedAuth.clientSecret, @"api_secret",
+                                       nil];
+    
+    NSString *paramStr = [GTMOAuth2Authentication encodedQueryParametersForDictionary:paramsDict];
+    
+    NSMutableURLRequest *request;
+    request = [[self class] mutableURLRequestWithURL:url
+                                         paramString:paramStr];
+
+    
+    NSLog(@"FETCH URL: %@", request);
+    
+    GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher fetcherWithRequest:request];
+    [myFetcher setAuthorizer:cachedAuth];
+    [myFetcher beginFetchWithDelegate:self
+                    didFinishSelector:@selector(stackExchangeFetcher:finishedWithData:error:)];
+}
+
+- (void)stackExchangeFetcher:(GTMHTTPFetcher *)fetcher finishedWithData:(NSData *)retrievedData error:(NSError *)error 
+{
+    if (error != nil) 
+    {
+        NSLog(@"FETCH FAILED");
+        [apiResultTextView setString:[error description]];
+        NSString *str = [[NSString alloc] initWithData:retrievedData
+                                              encoding:NSUTF8StringEncoding];
+        NSLog(@"\nERROR DATA: %@", str);
+        [[[apiResultTextView textStorage] mutableString] appendString:str];
+    } 
+    else 
+    {
+        // fetch succeeded
+        NSLog(@"FETCH OK");
+        NSString *str = [[NSString alloc] initWithData:retrievedData
+                                              encoding:NSUTF8StringEncoding];
+        [apiResultTextView setString:str];
+    }
+    
+    // The access token may have changed
+    [self updateUI];
+    
+}
+
+
+
+
+
+
 - (void)signOut {
     // Remove the stored StackExchange authentication from the keychain, if any
     [GTMOAuth2WindowController removeAuthFromKeychainForName:kStackExchangeKeychainItemName];
@@ -220,7 +308,7 @@ static NSString *const kStackExchangeKeychainItemName = @"SpikeOAuth: StackExcha
         [usernameField setStringValue:(email != nil ? email : @"")];
         [serviceNameField setStringValue:(serviceName != nil ? serviceName : @"")];
 //        [mSignInOutButton setTitle:@"Sign Out"];
-//        [mDoAnAuthenticatedFetchButton setEnabled:YES];
+        [fetchButton setEnabled:YES];
 //        [mExpireNowButton setEnabled:YES];
     } else {
         // Signed out
@@ -230,7 +318,7 @@ static NSString *const kStackExchangeKeychainItemName = @"SpikeOAuth: StackExcha
         [expirationField setStringValue:@""];
         [refreshTokenField setStringValue:@""];
 //        [mSignInOutButton setTitle:@"Sign In..."];
-//        [mDoAnAuthenticatedFetchButton setEnabled:NO];
+        [fetchButton setEnabled:NO];
 //        [mExpireNowButton setEnabled:NO];
     }
 }

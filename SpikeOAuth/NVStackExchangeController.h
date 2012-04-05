@@ -19,10 +19,13 @@
     IBOutlet NSTextField *expirationField;
     IBOutlet NSTextField *refreshTokenField;
     
+    IBOutlet NSButton *fetchButton;
+    
     GTMOAuth2Authentication *cachedAuth;
 }
 
 - (IBAction)signInButtonClicked:(id)sender;
 - (IBAction)signUpButtonClicked:(id)sender;
+- (IBAction)fetchButtonClicked:(id)sender;
 
 @end
