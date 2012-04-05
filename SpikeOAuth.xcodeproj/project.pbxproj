@@ -48,6 +48,8 @@
 		3C3340C5152DF7C4001E0C37 /* GTMOAuthWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3340C1152DF7C4001E0C37 /* GTMOAuthWindowController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C566C5D152CA35300394522 /* NVDisqusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C566C5B152CA35300394522 /* NVDisqusController.m */; };
 		3C566C5E152CA35300394522 /* NVDisqusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C566C5C152CA35300394522 /* NVDisqusController.xib */; };
+		3C75BE4E152E299F009BE122 /* NVGoogleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C75BE4C152E299F009BE122 /* NVGoogleController.m */; };
+		3C75BE4F152E299F009BE122 /* NVGoogleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C75BE4D152E299F009BE122 /* NVGoogleController.xib */; };
 		3C7908D9152E0D9D009B3643 /* NVTwitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7908D7152E0D9D009B3643 /* NVTwitterController.m */; };
 		3C7908DA152E0D9D009B3643 /* NVTwitterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7908D8152E0D9D009B3643 /* NVTwitterController.xib */; };
 /* End PBXBuildFile section */
@@ -131,6 +133,9 @@
 		3C566C5B152CA35300394522 /* NVDisqusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVDisqusController.m; sourceTree = "<group>"; };
 		3C566C5C152CA35300394522 /* NVDisqusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NVDisqusController.xib; sourceTree = "<group>"; };
 		3C566C6A152D02AB00394522 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		3C75BE4B152E299F009BE122 /* NVGoogleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVGoogleController.h; sourceTree = "<group>"; };
+		3C75BE4C152E299F009BE122 /* NVGoogleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVGoogleController.m; sourceTree = "<group>"; };
+		3C75BE4D152E299F009BE122 /* NVGoogleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NVGoogleController.xib; sourceTree = "<group>"; };
 		3C7908D6152E0D9D009B3643 /* NVTwitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVTwitterController.h; sourceTree = "<group>"; };
 		3C7908D7152E0D9D009B3643 /* NVTwitterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVTwitterController.m; sourceTree = "<group>"; };
 		3C7908D8152E0D9D009B3643 /* NVTwitterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NVTwitterController.xib; sourceTree = "<group>"; };
@@ -280,6 +285,9 @@
 				3C7908D6152E0D9D009B3643 /* NVTwitterController.h */,
 				3C7908D7152E0D9D009B3643 /* NVTwitterController.m */,
 				3C7908D8152E0D9D009B3643 /* NVTwitterController.xib */,
+				3C75BE4B152E299F009BE122 /* NVGoogleController.h */,
+				3C75BE4C152E299F009BE122 /* NVGoogleController.m */,
+				3C75BE4D152E299F009BE122 /* NVGoogleController.xib */,
 			);
 			path = SpikeOAuth;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 				3C566C5E152CA35300394522 /* NVDisqusController.xib in Resources */,
 				3C3340C4152DF7C4001E0C37 /* GTMOAuthWindow.xib in Resources */,
 				3C7908DA152E0D9D009B3643 /* NVTwitterController.xib in Resources */,
+				3C75BE4F152E299F009BE122 /* NVGoogleController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +420,7 @@
 				3C3340C3152DF7C4001E0C37 /* GTMOAuthSignIn.m in Sources */,
 				3C3340C5152DF7C4001E0C37 /* GTMOAuthWindowController.m in Sources */,
 				3C7908D9152E0D9D009B3643 /* NVTwitterController.m in Sources */,
+				3C75BE4E152E299F009BE122 /* NVGoogleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

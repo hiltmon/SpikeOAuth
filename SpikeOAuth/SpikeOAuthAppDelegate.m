@@ -14,6 +14,7 @@
 @synthesize stackExchangeController = _stackExchangeController;
 @synthesize disqusController = _disqusController;
 @synthesize twitterController = _twitterController;
+@synthesize googleController = _googleController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -48,6 +49,16 @@
     }
     
     [self.twitterController showWindow:self];
+}
+
+- (IBAction)googleButtonClicked:(id)sender {
+    
+    if(!self.googleController)
+    {
+        self.googleController = [[NVGoogleController alloc] initWithWindowNibName:@"NVGoogleController"];
+    }
+    
+    [self.googleController showWindow:self];
 }
 
 @end
