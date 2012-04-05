@@ -1,27 +1,24 @@
 //
-//  NVDisqusController.h
+//  NVTwitterController.h
 //  SpikeOAuth
 //
-//  Created by Hilton Lipschitz on 4/4/12.
+//  Created by Hilton Lipschitz on 4/5/12.
 //  Copyright (c) 2012 Noverse LLC. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 
-#import "GTMOAuth2WindowController.h"
+#import "GTMOAuthWindowController.h"
 
-@interface NVDisqusController : NSWindowController
+@interface NVTwitterController : NSWindowController
 {
     IBOutlet NSTextView *apiResultTextView;
     IBOutlet NSTextField *usernameField;
-    IBOutlet NSTextField *serviceNameField;
     IBOutlet NSTextField *accessTokenField;
-    IBOutlet NSTextField *expirationField;
-    IBOutlet NSTextField *refreshTokenField;
     
     IBOutlet NSButton *fetchButton;
     
-    GTMOAuth2Authentication *cachedAuth;
+    GTMOAuthAuthentication *cachedAuth;
 }
 
 - (IBAction)signInButtonClicked:(id)sender;

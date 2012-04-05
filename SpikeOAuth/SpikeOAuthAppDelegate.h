@@ -10,6 +10,7 @@
 
 #import "NVStackExchangeController.h"
 #import "NVDisqusController.h"
+#import "NVTwitterController.h"
 
 @interface SpikeOAuthAppDelegate : NSObject <NSApplicationDelegate>
 
@@ -17,8 +18,10 @@
 
 @property (retain) NVStackExchangeController *stackExchangeController;
 @property (retain) NVDisqusController *disqusController;
+@property (retain) NVTwitterController *twitterController;
 
 - (IBAction)stackExchangeButtonClicked:(id)sender;
 - (IBAction)disqusButtonClicked:(id)sender;
+- (IBAction)twitterButtonClicked:(id)sender;
 
 @end

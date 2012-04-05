@@ -13,6 +13,7 @@
 @synthesize window = _window;
 @synthesize stackExchangeController = _stackExchangeController;
 @synthesize disqusController = _disqusController;
+@synthesize twitterController = _twitterController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -37,6 +38,16 @@
     }
     
     [self.disqusController showWindow:self];
+}
+
+- (IBAction)twitterButtonClicked:(id)sender {
+    
+    if(!self.twitterController)
+    {
+        self.twitterController = [[NVTwitterController alloc] initWithWindowNibName:@"NVTwitterController"];
+    }
+    
+    [self.twitterController showWindow:self];
 }
 
 @end

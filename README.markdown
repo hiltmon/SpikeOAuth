@@ -6,11 +6,8 @@ This spike solution has been written to see if I can use Google's [OAuth2](http:
 
 ## Current Status
 
-- ☐ StackExchange
-
+- ✓ StackExchange
 - ✓ Disqus
-
-    Note: Disqus authenticated fetches require the `access_token` in the URL string, they do not use the HTTP-Header `bearer`, so aithenticated fetches need to be different
 
 ## Contributing
 

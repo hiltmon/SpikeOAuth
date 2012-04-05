@@ -8,7 +8,7 @@
 
 #import "NVDisqusController.h"
 
-#import "GTMHTTPFetcherLogging.h"
+//#import "GTMHTTPFetcherLogging.h"
 
 @interface NVDisqusController ()
 
@@ -28,7 +28,7 @@ static NSString *const kDisqusKeychainItemName = @"SpikeOAuth: Disqus";
     self = [super initWithWindow:window];
     if (self) {
         // Initialization code here.
-        [GTMHTTPFetcher setLoggingEnabled:YES];
+//        [GTMHTTPFetcher setLoggingEnabled:YES];
     }
     
     return self;
